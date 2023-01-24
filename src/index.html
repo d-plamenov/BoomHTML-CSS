@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
+    <title>No new messages</title>
     <meta
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
@@ -28,18 +28,12 @@
       <button class="button">Boom?</button>
     </div>
   </body>
-
   <script>
-    let add_element = () => {
-      let elements = [];
-      for (let i=0; i<5; i++) {
-        const article = document.createElement("article");
-        article.classList.add("message");
-        article.innerHTML = "Sample Text";
-        elements.push(article)
-      }
-      elements.forEach(a => document.body.appendChild(a));
-    };
-    document.body.addEventListener('click', add_element)
+    let changeTitle = () => {
+      document.title = "One new message"
+    }
+    window.onload = () => {
+      setTimeout(changeTitle, 3000)
+    }
   </script>
 </html>
