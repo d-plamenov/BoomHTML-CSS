@@ -24,17 +24,24 @@
     />
   </head>
   <body>
-    <form action="" autocomplete="on">
-      <input type="text" name="ccname" class="input"/>
-      <input type="number" name="cardnumber" class="input"/>
-      <input type="number" name="cvc" class="input"/>
-      <input type="number" name="cc-exp" class="input"/>
-    </form>
-    
     <div class="main">
 
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
   </body>
+
+  <script>
+    let add_element = () => {
+      let elements = [];
+      for (let i=0; i<5; i++) {
+        const article = document.createElement("article");
+        article.classList.add("message");
+        article.innerHTML = "Sample Text";
+        elements.push(article)
+      }
+      elements.forEach(a => document.body.appendChild(a));
+    };
+    add_element();
+  </script>
 </html>
