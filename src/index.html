@@ -7,6 +7,13 @@
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -17,26 +24,17 @@
     />
   </head>
   <body>
+    <form action="" autocomplete="on">
+      <input type="text" name="ccname" class="input"/>
+      <input type="number" name="cardnumber" class="input"/>
+      <input type="number" name="cvc" class="input"/>
+      <input type="date" name="cc-exp" class="input"/>
+    </form>
+    
     <div class="main">
-      <div class="tabs is-toggle is-toggle-rounded is-large">
-        <ul>
-          <li class="is-active">
-            <i class="fa-solid fa-house"></i>
-            Home
-          </li>
-          <li>
-            <i class="fa-solid fa-user"></i>
-            Profile
-          </li>
-          <li>
-            <i class="fa-solid fa-address-book"></i>
-            Contact
-          </li>
-        </ul>
-      </div>
-      <div class="box">
-        <p>Welcome!</p>
-      </div>
+
+      <div class="emoji mb-6">💣🤯💥</div>
+      <button class="button">Boom?</button>
     </div>
   </body>
 </html>
