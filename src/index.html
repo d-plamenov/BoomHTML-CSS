@@ -7,18 +7,39 @@
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <link rel="icon" href="images/favicon-16x16.png" sizes="16x16">
     <link rel="icon" href="images/favicon-32x32.png" sizes="32x32">
     <link rel="android-chrome" href="images/android-chrome-192x192.png" sizes="192x192">
     <link rel="android-chrome" href="images/android-chrome-512x512.png" sizes="512x512">
-
   </head>
   <body>
     <div class="main">
+
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
     </div>
   </body>
+
+  <script>
+    let add_element = () => {
+      let elements = [];
+      for (let i=0; i<5; i++) {
+        const article = document.createElement("article");
+        article.classList.add("message");
+        article.innerHTML = "Sample Text";
+        elements.push(article)
+      }
+      elements.forEach(a => document.body.appendChild(a));
+    };
+    document.body.addEventListener('click', add_element)
+  </script>
 </html>
