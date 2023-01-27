@@ -27,3 +27,9 @@ html {
   font-size: 10rem;
   flex-flow: column;
 }
+
+.container {
+  display: grid;
+  grid-template-rows: 0px 0px 0px;
+  grid-template-columns: 0px 0px 0px;
+}
