@@ -48,15 +48,8 @@ html {
   font-size: 3rem;
 }
 
-.chat {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
- 
+.container {
+  display: grid;
+  grid-template-rows: 0px 0px 0px;
+  grid-template-columns: 0px 0px 0px;
 }
