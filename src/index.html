@@ -2,17 +2,35 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>HTML, CSS and SASS Boilerplate</title>
+    <title>No new messages</title>
     <meta
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet/scss" href="scss/app.scss"/>
   </head>
   <body>
     <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
+      <a href="#boom">Ready?💣</a>
+    </div>
+    <div class="box">
+      <div class="boom" id="boom">💥💥💥Boom💥💥💥</div>
+    </div>
+
+    <div class="discounts">
+      <ul>
+        <li>Some random items that are discounted</li>
+        <li>Some random items that are discounted</li>
+        <li>Some random items that are discounted</li>
+      </ul>
     </div>
 
     <div class="navbar-menu">
@@ -25,4 +43,12 @@
     </div>
     <div class="navbar-burger"><button>burger</button></div>
   </body>
+  <script>
+    let changeTitle = () => {
+      document.title = "One new message"
+    }
+    window.onload = () => {
+      setTimeout(changeTitle, 3000)
+    }
+  </script>
 </html>
