@@ -48,7 +48,12 @@ html {
   font-size: 3rem;
 }
 
-body {
-  background-color: $body-color;
-  color: $text-color;
+.discounts {
+  display: none;
+}
+
+@media screen and (max-width:600px) {
+  .discounts {
+    display: block;
+  }
 }
