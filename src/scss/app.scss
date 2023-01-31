@@ -28,6 +28,7 @@ html {
   flex-flow: column;
 }
 
-$body-color: green;
-
-$text-color: yellow;
+body {
+  background-color: $body-color;
+  color: $text-color;
+}
