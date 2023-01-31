@@ -48,12 +48,19 @@ html {
   font-size: 3rem;
 }
 
-.discounts {
+.navbar-burger {
   display: none;
 }
 
+.navbar-menu {
+  display: block;
+}
+
 @media screen and (max-width:600px) {
-  .discounts {
+  .navbar-burger {
     display: block;
+  }
+  .navbar-menu {
+    display: none;
   }
 }
