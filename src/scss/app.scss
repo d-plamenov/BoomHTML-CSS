@@ -48,8 +48,7 @@ html {
   font-size: 3rem;
 }
 
-.container {
-  display: grid;
-  grid-template-rows: 0px 0px 0px;
-  grid-template-columns: 0px 0px 0px;
+body {
+  background-color: $body-color;
+  color: $text-color;
 }
