@@ -7,8 +7,4 @@ window.addEventListener("DOMContentLoaded", () => {
     imageDiv.style['transform'] = 'scale(2)';
   })
 
-  const button = document.querySelector(".button");
-  button.addEventListener("click", () => {
-    alert("💣");
-  });
 });
