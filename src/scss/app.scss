@@ -20,9 +20,26 @@ html {
 }
 
 .main {
-  height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-flow: column;
+}
+
+.card {
+  border: 10px solid $grey-light;
+  width: 500px;
+  box-sizing: content-box;
+}
+
+.card-header {
+  background-color: $light;
+  padding: 25px 5px 20px 25px;
+}
+
+.content {
+  padding: 30px 25px;
+}
+
+.button-container {
+  margin-top: 30px;
 }
