@@ -14,13 +14,17 @@ export default class Application extends EventEmitter {
     this.emit(Application.events.READY);
   }
   setEmojis(emojis) {
-   const div = document.getElementById("emojis");
-   const paragraph = document.createElement("p");
-   paragraph.innerHTML = app.emojis;
-   div.appendChild(paragraph);
-}
+    this.emojis = emojis;
+    const div = document.getElementById("emojis");
+    const paragraph = document.createElement("p");
+    this.emojis.forEach((e) => (paragraph.textContent += e));
+    div.appendChild(paragraph);
+  }
 
   addBananas() {
-    this.emojis.map(monkey => {monkey += this.banana })
+    const newEmojis = this.emojis.map(monkey => monkey + this.banana);
+    const div = document.getElementById("emojis");
+    div.textContent = "";
+    this.setEmojis(newEmojis);
   }
 }
